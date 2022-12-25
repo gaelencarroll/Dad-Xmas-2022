@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(118, 148, 118);
+}
+
+.headers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Sevillana', cursive;
+    font-size: 3em;
+    color: rgb(92, 0, 0);
+}
+
+.description{
+    color: rgb(45, 45, 45);
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 700px;
+}
+
+.recipes{
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    width: 750px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.food .words{
+    position: absolute;
+    visibility: hidden;
+    font-family: 'Lobster', cursive;
+    opacity: 1;
+    font-size: 2em;
+    color: rgb(12, 41, 12);
+}
+
+.hidden{
+    width: 750px;
+    height: 300px;
+    visibility: hidden;
+    background-color: rgb(211, 211, 211,0.5);
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food:hover .hidden{
+    visibility: visible;
+}
+
+.food:hover .words{
+    visibility: visible;
+}
+
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
